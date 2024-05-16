@@ -15,10 +15,13 @@ const Login = ({navigation}) => {
   const [loginMsg, setLoginMsg] = useState('');
   const {password, isLogedIn, email, setLogin} = SignupContext();
   const handleLogin = () => {
-    if (userPassword === password && userEmail === email) {
+    if (
+      userPassword === password &&
+      userEmail === email &&
+      password !== '' &&
+      email !== ''
+    ) {
       setLogin(true);
-
-      setLoginMsg('invalid credentails    ');
     }
   };
   return (

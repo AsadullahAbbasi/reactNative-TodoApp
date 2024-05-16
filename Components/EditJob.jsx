@@ -34,7 +34,7 @@ const EditJob = ({route, navigation}) => {
             paddingHorizontal: 20,
             borderRadius: 5,
             borderWidth: 1,
-            borderColor: '#5D5D67',
+            borderColor: '#8F8F9E',
           }}
           value={editedTitle}
         />

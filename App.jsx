@@ -16,7 +16,7 @@ const App = () => {
   const [posts, setPosts] = useState([]);
   const Stack = createNativeStackNavigator();
 
-  const [isLogedIn, setLogin] = useState(true);
+  const [isLogedIn, setLogin] = useState(false);
   const addPost = post => {
     setPosts(prevPosts => [...prevPosts, post]);
   };

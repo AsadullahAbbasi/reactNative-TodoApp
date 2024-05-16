@@ -13,12 +13,7 @@ import add_icon from '../icons/plusButton.png';
 import {Image, View} from 'react-native';
 import logout_icon from '../icons/logout_icon.png';
 const Todos = ({navigation}) => {
-  const {
-    posts,
-    name,
-
-    setLogin,
-  } = SignupContext();
+  const {posts, name, setPassword, setEmail, setLogin} = SignupContext();
 
   const [searched, setSearched] = useState('');
 
@@ -60,6 +55,8 @@ const Todos = ({navigation}) => {
         <TouchableOpacity
           onPress={() => {
             setLogin(false);
+            setPassword('');
+            setEmail('');
           }}>
           <Image
             style={{
